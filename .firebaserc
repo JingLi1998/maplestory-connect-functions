@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "maplestory-connect",
+    "stagin": "maplestory-connect"
+  }
+}
