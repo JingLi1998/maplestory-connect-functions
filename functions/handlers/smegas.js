@@ -18,6 +18,9 @@ exports.getAllSmegas = (req, res) => {
 };
 
 exports.postOneSmega = (req, res) => {
+  if (req.body.body.trim() === '') {
+    return res.status(400).json({ body: 'Body must not be empty' });
+  }
   const newSmega = {
     body: req.body.body,
     userHandle: req.user.handle,
