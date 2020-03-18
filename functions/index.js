@@ -21,7 +21,7 @@ const {
 } = require('./handlers/users');
 const FBAuth = require('./util/fbAuth');
 
-const cors = require('cors');
+const cors = require('cors')({ origin: true });
 app.use(cors());
 
 // Smega Routes
